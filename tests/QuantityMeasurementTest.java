@@ -24,6 +24,11 @@ public class QuantityMeasurementTest {
         Object result = tests.feet(1);
         boolean b = Integer.class.isInstance(result);
         assertEquals(true, b);
+    }
 
+    @Test
+    public void TestCheckforEquality() throws Exception {
+        Object result = tests.feet(1);
+        assertEquals(1, result);
     }
 }
