@@ -19,4 +19,11 @@ public class QuantityMeasurementTest {
         assertEquals("Null value", result);
     }
 
+    @Test
+    public void TestTypeCheck() throws Exception {
+        Object result = tests.feet(1);
+        boolean b = Integer.class.isInstance(result);
+        assertEquals(true, b);
+
+    }
 }
