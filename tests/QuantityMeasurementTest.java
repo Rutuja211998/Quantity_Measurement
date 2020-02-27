@@ -8,13 +8,13 @@ public class QuantityMeasurementTest {
     QuantityMeasurement tests = new QuantityMeasurement();
 
     @Test
-    public void Testfeetvalue() throws Exception {
+    public void TestfeetValue() throws Exception {
         Object result = tests.feet(0);
         assertEquals(0, result);
     }
 
     @Test
-    public void Testnullvalue() throws Exception {
+    public void TestNullValue() throws Exception {
         Object result = tests.feet(null);
         assertEquals("Null value", result);
     }
@@ -31,4 +31,11 @@ public class QuantityMeasurementTest {
         Object result = tests.feet(1);
         assertEquals(1, result);
     }
+
+    @Test
+    public void TestinchNullValue() throws Exception {
+        Object result = tests.inch(null);
+        assertEquals("Null value", result);
+    }
+
 }

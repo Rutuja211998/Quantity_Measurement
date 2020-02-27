@@ -1,6 +1,7 @@
 
 public class QuantityMeasurement {
 
+
     public Object feet(Object feet) {
         if (feet instanceof Integer)
         {
@@ -11,4 +12,18 @@ public class QuantityMeasurement {
             return "Null value";
         }
     }
+
+
+    public Object inch(Object inch) {
+        if (inch instanceof Integer)
+        {
+            return (int) inch;
+        }
+        else
+        {
+            return "Null value";
+        }
+    }
+
+
 }
