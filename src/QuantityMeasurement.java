@@ -44,4 +44,13 @@ public class QuantityMeasurement {
             return "Null value";
         }
     }
+
+    public Object Yard(Object Yard) {
+        if (Yard instanceof Integer) {
+            int yardtofeet = (int) Yard * 3;
+            return yardtofeet;
+        } else {
+            return "Null value";
+        }
+    }
 }

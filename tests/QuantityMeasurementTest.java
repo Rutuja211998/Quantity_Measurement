@@ -110,4 +110,10 @@ public class QuantityMeasurementTest {
         Object result = tests.inchtoyard(36);
         assertEquals(1, result);
     }
+
+    @Test
+    public void  Oneyard3feet() throws Exception {
+        Object result = tests.Yard(1);
+        assertEquals(3, result);
+    }
 }
