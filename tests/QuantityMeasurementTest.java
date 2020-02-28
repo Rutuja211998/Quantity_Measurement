@@ -116,4 +116,10 @@ public class QuantityMeasurementTest {
         Object result = tests.Yard(1);
         assertEquals(3, result);
     }
+
+    @Test
+    public void  Twoinch5cm() throws Exception {
+        Object result = tests.inchtocm(5.08);
+        assertEquals(2.0, result);
+    }
 }

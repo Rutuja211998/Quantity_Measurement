@@ -49,7 +49,19 @@ public class QuantityMeasurement {
         if (Yard instanceof Integer) {
             int yardtofeet = (int) Yard * 3;
             return yardtofeet;
-        } else {
+        }
+        else {
+            return "Null value";
+        }
+    }
+
+    public Object inchtocm(Object inchtocm) {
+        if (inchtocm instanceof Double) {
+            double centimeter = (double) inchtocm / 2.54;
+            return centimeter;
+        }
+        else
+        {
             return "Null value";
         }
     }
