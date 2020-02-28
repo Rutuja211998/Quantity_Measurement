@@ -92,4 +92,10 @@ public class QuantityMeasurementTest {
         Object result = tests.Feet(1);
         assertNotEquals(1, result);
     }
+
+    @Test
+    public void OneinchnotOneyard() throws Exception {
+        Object result = tests.Inch(1);
+        assertNotEquals(1, result);
+        }
 }
