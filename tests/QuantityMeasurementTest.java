@@ -86,4 +86,10 @@ public class QuantityMeasurementTest {
         Object result = tests.Feet(3);
         assertEquals(1, result);
     }
+
+    @Test
+    public void OnefeetnotOneyard() throws Exception {
+        Object result = tests.Feet(1);
+        assertNotEquals(1, result);
+    }
 }
