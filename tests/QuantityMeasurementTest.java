@@ -98,4 +98,11 @@ public class QuantityMeasurementTest {
         Object result = tests.Inch(1);
         assertNotEquals(1, result);
         }
+
+    @Test
+    public void Oneyard36inch() throws Exception {
+        Object result = tests.yardtoinch(1);
+        assertEquals(36, result);
+    }
+
 }
