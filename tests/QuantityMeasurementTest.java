@@ -7,6 +7,7 @@ import static org.junit.Assert.*;
 public class QuantityMeasurementTest {
     QuantityMeasurement tests = new QuantityMeasurement();
 
+    //Usecase_1 : As a math student, I wish to compare lengths 1ft = 12in
     @Test
     public void TestfeetValue() throws Exception {
         Object result = tests.feet(0);
@@ -81,6 +82,7 @@ public class QuantityMeasurementTest {
         assertEquals(1, result);
     }
 
+    //Usecase_2 : As a math student, I wish to compare lengths 3ft = 1yd
     @Test
     public void ThreefeetOneyard() throws Exception {
         Object result = tests.Feet(3);
@@ -117,9 +119,17 @@ public class QuantityMeasurementTest {
         assertEquals(3, result);
     }
 
+    //Usecase_3 : As a math student, I wish to compare lengths 2 in = 5 cm
     @Test
     public void  Twoinch5cm() throws Exception {
         Object result = tests.inchtocm(5.08);
         assertEquals(2.0, result);
+    }
+
+    //Usecase_4 : As a math student, I want to be able to add two lengths in inches
+    @Test
+    public void add2length() throws Exception {
+        Object result = tests.addinch(2, 2);
+        assertEquals(4, result);
     }
 }
