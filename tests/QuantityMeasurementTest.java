@@ -62,4 +62,10 @@ public class QuantityMeasurementTest {
         Object result = tests.feet(1);
         assertNotEquals(1, result);
     }
+
+    @Test
+    public void OneinchnotequalOnefeet() throws Exception {
+        Object result = tests.inch(1);
+        assertNotEquals(1,result);
+    }
 }
