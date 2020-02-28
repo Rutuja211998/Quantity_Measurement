@@ -23,4 +23,16 @@ public class QuantityMeasurement {
             return "Null value";
         }
     }
+
+    public Object Feet(Object Feet) {
+        if (Feet instanceof Integer)
+        {
+            int yard = (int) Feet / 3;
+            return yard;
+        }
+        else
+        {
+            return "Null value";
+        }
+    }
 }

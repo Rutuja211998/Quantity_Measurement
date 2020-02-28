@@ -80,4 +80,10 @@ public class QuantityMeasurementTest {
         Object result = tests.inch(12);
         assertEquals(1, result);
     }
+
+    @Test
+    public void ThreefeetOneyard() throws Exception {
+        Object result = tests.Feet(3);
+        assertEquals(1, result);
+    }
 }
