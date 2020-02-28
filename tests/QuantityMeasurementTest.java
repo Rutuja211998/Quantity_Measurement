@@ -74,4 +74,10 @@ public class QuantityMeasurementTest {
         Object result = tests.feet(1);
         assertEquals(12, result);
     }
+
+    @Test
+    public void TwelveinchOnefeet() throws Exception {
+        Object result = tests.inch(12);
+        assertEquals(1, result);
+    }
 }
