@@ -27,10 +27,19 @@ public class QuantityMeasurement {
         }
     }
 
-    public Object Inch(Object Inch) {
-        if (Inch instanceof Integer) {
-            int inchtoyard = (int) Inch / 36;
-            return inchtoyard;
+    public Object inchtoyard(Object inchtoyard) {
+        if (inchtoyard instanceof Integer) {
+            int inchconvert = (int) inchtoyard / 36;
+            return inchconvert;
+        } else {
+            return "Null value";
+        }
+    }
+
+    public Object yardtoinch(Object yardtoinch) {
+        if (yardtoinch instanceof Integer) {
+            int yardconvert = (int) yardtoinch * 36;
+            return yardconvert;
         } else {
             return "Null value";
         }

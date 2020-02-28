@@ -95,7 +95,7 @@ public class QuantityMeasurementTest {
 
     @Test
     public void OneinchnotOneyard() throws Exception {
-        Object result = tests.Inch(1);
+        Object result = tests.inchtoyard(1);
         assertNotEquals(1, result);
         }
 
@@ -105,4 +105,9 @@ public class QuantityMeasurementTest {
         assertEquals(36, result);
     }
 
+    @Test
+    public void ThirtysixinchOneyard() throws Exception {
+        Object result = tests.inchtoyard(36);
+        assertEquals(1, result);
+    }
 }
