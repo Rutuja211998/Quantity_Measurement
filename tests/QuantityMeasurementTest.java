@@ -29,7 +29,7 @@ public class QuantityMeasurementTest {
     @Test
     public void TestCheckforEqualityfeet() throws Exception {
         Object result = tests.feet(1);
-        assertEquals(1, result);
+        assertEquals(12, result);
     }
 
     @Test
@@ -47,7 +47,7 @@ public class QuantityMeasurementTest {
 
     @Test
     public void TestCheckforEqualityinch() throws Exception {
-        Object result = tests.inch(1);
+        Object result = tests.inch(12);
         assertEquals(1, result);
     }
 }
