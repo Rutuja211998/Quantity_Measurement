@@ -20,7 +20,7 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void TestTypeCheck() throws Exception {
+    public void TestfeetTypeCheck() throws Exception {
         Object result = tests.feet(1);
         boolean b = Integer.class.isInstance(result);
         assertEquals(true, b);
@@ -38,4 +38,10 @@ public class QuantityMeasurementTest {
         assertEquals("Null value", result);
     }
 
+    @Test
+    public void TestinchTypeCheck() throws Exception {
+        Object result = tests.inch(1);
+        boolean b = Integer.class.isInstance(result);
+        assertEquals(true, b);
+    }
 }
