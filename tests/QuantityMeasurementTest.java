@@ -53,7 +53,13 @@ public class QuantityMeasurementTest {
 
     @Test
     public void ZerofeetZeroinch() throws Exception {
-        Object result1 = tests.feet(0);
-        assertEquals(0,result1);
+        Object result = tests.feet(0);
+        assertEquals(0,result);
+    }
+
+    @Test
+    public void OnefeetnotequalOneinch() throws Exception {
+        Object result = tests.feet(1);
+        assertNotEquals(1, result);
     }
 }
